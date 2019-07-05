@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <nav class="navbar navbar-expand-lg bg-dark">
+      <a class="navbar-brand text-danger" href="#">PWK</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active text-danger" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link text-danger" href="table.html">Passwords List</a>
+          <a class="nav-item nav-link text-danger" href="form.html">Password Add</a>
+        </div>
+      </div>
+    </nav>
+       <br>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body style="background: linear-gradient(to right, 
+#606c88, #3f4c6b)">
+  <div>
+    <button class="btn btn-primary" onclick="performGetRequest1()" style="width: 30%; margin:3% 35%;">Show My Password List</button>
+  </div>
+    <table class="table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Website/App</th>
+        <th>email</th>
+        <th>password</th>
+        
+    </tr>
+     </thead>
+
+     <tbody id="tableResult1">
+      
+
+     </tbody>
+</table>
+     <div class="d-flex justify-content-center">
+         <a href="form.html" type="button" class=" btn btn-secondary" >create new password</a>
+     </div>
+
+</body>
+</html>

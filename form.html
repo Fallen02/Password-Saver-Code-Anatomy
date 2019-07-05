@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <a class="navbar-brand text-danger" href="#">PWK</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active text-danger" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link text-danger" href="table.html">Passwords List</a>
+          <a class="nav-item nav-link text-danger" href="form.html">Password Add</a>
+        </div>
+      </div>
+    </nav>
+          <br>
+
+</head>
+<body style="background: linear-gradient(to right, #606c88, #3f4c6b)">
+    <div class="container" style="margin: 0 auto;">
+            <form id="add_form" onsubmit="createNewPasswordList()">
+                    <div class="form-group">
+                            <label for="exampleInputWebsite">Website</label>
+                            <input type="text" class="form-control" id="inputWebsite" aria-describedby="emailHelp" placeholder="Enter Website">
+                          </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="text" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+      </div>
+        <div class="container">
+              <a href="table.html" type="button" class=" btn btn-secondary" >Existing Passwords</a>
+        </div>
+            
+</body>
+</html>
